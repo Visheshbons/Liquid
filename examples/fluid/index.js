@@ -26,7 +26,7 @@ function main({ pane, contextID, glslVersion}) {
 	// If we don't have then reset they tend to clump up.
 	const PARTICLE_LIFETIME = 1000;
 	// How many steps to compute the zero pressure field.
-	const NUM_JACOBI_STEPS = 3;
+	const NUM_JACOBI_STEPS = 4;
 	const PRESSURE_CALC_ALPHA = -1;
 	const PRESSURE_CALC_BETA = 0.25;
 	// How many steps to move particles between each step of the simulation.

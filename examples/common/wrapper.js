@@ -121,12 +121,12 @@
 			MicroModal.show('modal-1', { onClose: () => { setTimeout(() => { overlay.style.display = 'none'; }, 500); } });
 			overlay.style.display = 'block';
 		},
-		sourceCode: () => {
-			document.getElementById('sourceCode').click();
+		goToDevPage: () => {
+			window.location.href = 'https://vishesh-kudva.onrender.com/';
 		},
 	}
-	pane.addButton({ title: 'About'}).on('click', modalOptions.showModal);
-	pane.addButton({ title: 'View Code'}).on('click', modalOptions.sourceCode);
+	pane.addButton({ title: 'About This Page'}).on('click', modalOptions.showModal);
+	pane.addButton({ title: 'The Developer'}).on('click', modalOptions.goToDevPage);
 
 	// Load example app.
 	reloadExampleWithNewParams();
