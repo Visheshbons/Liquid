@@ -423,7 +423,7 @@ function main({ pane, contextID, glslVersion}) {
 			out vec4 out_color;
 			void main() {
 				vec3 background = vec3(0.98, 0.922, 0.843);
-				vec3 particle = vec3(0, 0, 0.2);
+				vec3 particle = vec3(0.0, 0.2, 0.25);
 				out_color = vec4(mix(background, particle, texture(u_trailState, v_uv).x), 1);
 			}
 		`,
